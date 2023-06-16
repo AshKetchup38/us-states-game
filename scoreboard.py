@@ -26,3 +26,8 @@ class Scoreboard(Turtle):
         self.color("black")
         self.setposition(x, y)
         self.write(f"{name}", False, ALIGNMENT, FONT)
+    
+    def label_missed(self, name, x, y):
+        self.color("red")
+        self.setposition(x, y)
+        self.write(f"{name}", False, ALIGNMENT, FONT)
